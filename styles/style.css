@@ -129,6 +129,9 @@ body{
    
     
   }
+  .player{
+    width: 290px;
+  }
   .content{
     display: flex;
     margin-left: 15px;
