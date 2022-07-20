@@ -39,10 +39,11 @@ body{
     font-weight: bold;
   }
   /* section 2 */
+ 
   .poster{
     display: flex;
     margin-top: 45px;
-    margin-bottom: 0;
+    margin-bottom: 45px;
     background-color: white;
 
   }
@@ -50,7 +51,7 @@ body{
     background-color: black;
     height: 300px;
     padding: 15px;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-basis: 400px;
     flex-direction: column;
@@ -71,6 +72,9 @@ body{
   .blog{
     background-color: red;
     color: white;
+  }
+  .view-all{
+    display: none;
   }
   .aside-right{
     display: grid;
@@ -120,6 +124,7 @@ body{
     padding: 15px;
     height: 300px;
     border-radius: 5px 0 0 0;
+    margin-top: 18px;
   }
   .goal{
     text-align: center;
@@ -135,4 +140,53 @@ body{
   .items p{
     margin-left: 16px;
     color: gray;
+  }
+  /* media query */
+  @media (min-width: 481px) and (max-width: 767px){
+    .banner,footer{
+        display: none;
+    }
+    .poster{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .aside-right{
+        
+        display: grid;
+        grid-column-gap:8px ;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 0;
+    }
+
+    .aside-left{
+        background-color: white;
+        flex-direction: row;
+        align-items:center; 
+        margin-left: 16px;
+        flex-basis: 80px;
+    }
+    .btn-aside{
+        width:180px;
+        margin-left: 8px;
+        border: 2px solid gray;
+    }
+    .blog{
+        border: none;
+    }
+    .view-all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 150px;
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 15px;
+        font-weight: bold;
+        margin: 0 auto;
+      }
+    
+    
   }
