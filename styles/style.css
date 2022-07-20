@@ -30,6 +30,7 @@ body{
   }
   .description{
     font-weight: bold;
+    line-height: 24px;
   }
   .btn{
     width: 120px;
@@ -118,7 +119,7 @@ body{
     padding: 1px;
   }
   footer{
-    margin-top: 0;
+    
     background-color: black;
     color: white;
     padding: 15px;
@@ -143,8 +144,17 @@ body{
   }
   /* media query */
   @media (min-width: 481px) and (max-width: 767px){
-    .banner,footer{
-        display: none;
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-item-left {
+        flex: 1;
+        margin-left: 24px;
+      }
+    .heading{
+        font-size: 24px;
     }
     .poster{
         display: flex;
@@ -178,7 +188,6 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        
         width: 150px;
         background-color: red;
         border: none;
@@ -187,6 +196,20 @@ body{
         font-weight: bold;
         margin: 0 auto;
       }
+      body{
+        margin: 16px 8px 0 9px;
+        overflow-x: hidden;
+      }
+      footer{
+        background-color: black;
+        width: 100%;
+       
+        
+      }
+      .items{
+        flex-wrap: wrap;
+      }
+      
     
     
   }
