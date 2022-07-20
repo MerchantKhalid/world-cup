@@ -123,7 +123,7 @@ body{
     background-color: black;
     color: white;
     padding: 15px;
-    height: 300px;
+    height: 600px;
     border-radius: 5px 0 0 0;
     margin-top: 18px;
   }
@@ -142,7 +142,7 @@ body{
     margin-left: 16px;
     color: gray;
   }
-  /* media query */
+  /* media query tablet */
   @media (min-width: 481px) and (max-width: 767px){
     .banner{
         display: flex;
@@ -212,4 +212,64 @@ body{
       
     
     
+  }
+  /* Media query mobile */
+  @media (max-width: 480px){
+    body{
+        margin: 16px 8px 0 9px;
+        overflow-x: hidden;
+      }
+      .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .poster{
+        margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+      .flex-item-left {
+        width: 100%;
+        margin-left:0;
+        margin-bottom: 30px;
+      }
+      .flex-item-right{
+        
+        margin-left: 0;
+      }
+      .aside-left{
+        background-color: white;
+        margin-top: 20px;
+        height: 300px;
+        padding: 15px;
+        width: 100%;
+        display: flex;
+        flex-basis: 200px;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+      }
+      .aside-right{
+        
+        display: grid;
+        grid-row-gap:18px;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .btn-aside{
+        width:100%;
+
+        margin-left: 8px;
+        border: 2px solid gray;
+    }
+    footer{
+        background-color: black;
+        width: 100%;
+      }
+      .items{
+        display: flex;
+        flex-direction: column;
+      }
   }
