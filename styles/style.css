@@ -1,7 +1,10 @@
+
+
 body{
     background-color: white;
     margin: 16px 85px 0 85px;
 }
+/* main banner */
 .banner{
     display: flex;
     align-items: center;
@@ -16,8 +19,16 @@ body{
     margin-top: 16px;
 }
 .heading{
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
 }
+
+.link{
+    text-decoration: none;
+    color: black;
+    
+}
+/*  banner content left and right*/
 .flex-item-left {
     flex: 1;
     margin-left: 220px;
@@ -77,6 +88,7 @@ body{
   .view-all{
     display: none;
   }
+  /* grid used here */
   .aside-right{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -118,12 +130,13 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1px;
   }
+  /* footer */
   footer{
     
     background-color: black;
     color: white;
     padding: 15px;
-    height: 600px;
+    height: 480px;
     border-radius: 5px 0 0 0;
     margin-top: 18px;
   }
@@ -142,6 +155,45 @@ body{
     margin-left: 16px;
     color: gray;
   }
+  .icon{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin-top: 220px;
+  }
+  .social{
+    margin-left: 8px;
+    color: white;
+  }
+
+  /* match.html */
+  .flag{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+  .match{
+    border: 1px solid gray;
+    width: 300px;
+   
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1px;
+  }
+  .time{
+    font-weight: bold;
+    color: gray;
+    text-align: center;
+  }
+  .country{
+    font-weight:bolder;
+    color: black;
+  }
   /* media query tablet */
   @media (min-width: 481px) and (max-width: 767px){
     .banner{
@@ -155,6 +207,10 @@ body{
       }
     .heading{
         font-size: 24px;
+        text-align: center;
+    }
+    .description{
+        text-align: center;
     }
     .poster{
         display: flex;
@@ -181,6 +237,7 @@ body{
         margin-left: 8px;
         border: 2px solid gray;
     }
+    
     .blog{
         border: none;
     }
@@ -271,5 +328,10 @@ body{
       .items{
         display: flex;
         flex-direction: column;
+      }
+      .icon{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
       }
   }
