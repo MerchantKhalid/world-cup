@@ -85,6 +85,16 @@ body{
     background-color: red;
     color: white;
   }
+  .trans{
+    width: 120px;
+   
+   transition: width 2s;
+  }
+  .trans:hover{
+    
+        width: 300px;
+      
+  }
   .view-all{
     display: none;
   }
