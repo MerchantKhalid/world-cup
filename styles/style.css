@@ -96,7 +96,8 @@ body{
     flex-basis: 400px;
     flex-grow: 1;
     background-color: white;
-    margin-left: 86px;
+    margin-left: 5px;
+    overflow-x: hidden;
   }
   .transfer{
     border: 2px solid gray;
